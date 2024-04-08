@@ -8,9 +8,6 @@ public class Pelicula {
     private double sumaEvaluaciones;
     private int cantidadDeEvaluaciones;
 
-    public Pelicula() {
-    }
-
     public String getNombre() {
         return nombre;
     }
@@ -35,10 +32,6 @@ public class Pelicula {
         this.duracionEnMinutos = duracionEnMinutos;
     }
 
-    public boolean isIncluidoEnElPlan() {
-        return incluidoEnElPlan;
-    }
-
     public void setIncluidoEnElPlan(boolean incluidoEnElPlan) {
         this.incluidoEnElPlan = incluidoEnElPlan;
     }
@@ -47,16 +40,8 @@ public class Pelicula {
         return sumaEvaluaciones;
     }
 
-    public void setSumaEvaluaciones(double sumaEvaluaciones) {
-        this.sumaEvaluaciones = sumaEvaluaciones;
-    }
-
     public int getCantidadDeEvaluaciones() {
         return cantidadDeEvaluaciones;
-    }
-
-    public void setCantidadDeEvaluaciones(int cantidadDeEvaluaciones) {
-        this.cantidadDeEvaluaciones = cantidadDeEvaluaciones;
     }
 
     public void mostrarFichaTecnica(){
@@ -71,7 +56,7 @@ public class Pelicula {
         cantidadDeEvaluaciones++;
     }
 
-    double calcularPromedio(){
+    public double calcularPromedio(){
         return sumaEvaluaciones / cantidadDeEvaluaciones;
     }
 }

@@ -21,10 +21,6 @@ public class Principal {
         System.out.println("Cantidad de evaluaciones contempladas: " + miPelicula.getCantidadDeEvaluaciones());
 
 
-
-
-
-
 //        com.aluracursos.screenmatch.modelos.Pelicula otraPelicula = new com.aluracursos.screenmatch.modelos.Pelicula();
 //        otraPelicula.setNombre("Matrix");
 //        otraPelicula.setAnioLanzamiento(1999);
