@@ -32,6 +32,10 @@ public class Pelicula {
         this.duracionEnMinutos = duracionEnMinutos;
     }
 
+    public boolean isIncluidoEnElPlan() {
+        return incluidoEnElPlan;
+    }
+
     public void setIncluidoEnElPlan(boolean incluidoEnElPlan) {
         this.incluidoEnElPlan = incluidoEnElPlan;
     }
