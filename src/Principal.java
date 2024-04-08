@@ -1,3 +1,5 @@
+import com.aluracursos.screenmatch.modelos.Pelicula;
+
 public class Principal {
     public static void main(String[] args) {
         Pelicula miPelicula = new Pelicula();
@@ -5,10 +7,6 @@ public class Principal {
         miPelicula.setAnioLanzamiento(2021);
         miPelicula.setDuracionEnMinutos(120);
 
-        Pelicula otraPelicula = new Pelicula();
-        otraPelicula.setNombre("Matrix");
-        otraPelicula.setAnioLanzamiento(1999);
-        otraPelicula.setDuracionEnMinutos(110);
 
         miPelicula.mostrarFichaTecnica();
         miPelicula.evaluar(7.3);
@@ -22,13 +20,23 @@ public class Principal {
         System.out.println("El promedio de notas evaluadas es: " + String.format("%.2f" , miPelicula.calcularPromedio()));
         System.out.println("Cantidad de evaluaciones contempladas: " + miPelicula.getCantidadDeEvaluaciones());
 
-        otraPelicula.mostrarFichaTecnica();
-        otraPelicula.evaluar(9.9);
-        otraPelicula.evaluar(8.8);
-        otraPelicula.evaluar(8.3);
 
-        System.out.println("La suma de las evaluaciones es: " + String.format("%.2f" , otraPelicula.getSumaEvaluaciones()));
-        System.out.println("El promedio de notas evaluadas es: " + String.format("%.2f", otraPelicula.calcularPromedio()));
-        System.out.println("Cantidad de evaluaciones contempladas: " + otraPelicula.getCantidadDeEvaluaciones());
+
+
+
+
+//        com.aluracursos.screenmatch.modelos.Pelicula otraPelicula = new com.aluracursos.screenmatch.modelos.Pelicula();
+//        otraPelicula.setNombre("Matrix");
+//        otraPelicula.setAnioLanzamiento(1999);
+//        otraPelicula.setDuracionEnMinutos(110);
+
+//        otraPelicula.mostrarFichaTecnica();
+//        otraPelicula.evaluar(9.9);
+//        otraPelicula.evaluar(8.8);
+//        otraPelicula.evaluar(8.3);
+
+//        System.out.println("La suma de las evaluaciones es: " + String.format("%.2f" , otraPelicula.getSumaEvaluaciones()));
+//        System.out.println("El promedio de notas evaluadas es: " + String.format("%.2f", otraPelicula.calcularPromedio()));
+//        System.out.println("Cantidad de evaluaciones contempladas: " + otraPelicula.getCantidadDeEvaluaciones());
     }
 }

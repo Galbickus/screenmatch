@@ -1,3 +1,5 @@
+package com.aluracursos.screenmatch.modelos;
+
 public class Pelicula {
     private String nombre;
     private int anioLanzamiento;
@@ -57,14 +59,14 @@ public class Pelicula {
         this.cantidadDeEvaluaciones = cantidadDeEvaluaciones;
     }
 
-    void mostrarFichaTecnica(){
+    public void mostrarFichaTecnica(){
         System.out.println("\n-*-*-*-*-*-*\nFicha Técnica\n-*-*-*-*-*-*\n");
         System.out.println("Título: " + this.nombre);
         System.out.println("Año de lanzamiento es: " + this.anioLanzamiento);
         System.out.println("Duración: " + this.duracionEnMinutos + " min.");
     }
 
-    void evaluar(double nota){
+    public void evaluar(double nota){
         sumaEvaluaciones += nota;
         cantidadDeEvaluaciones++;
     }
