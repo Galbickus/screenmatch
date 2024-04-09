@@ -15,6 +15,9 @@ public class Principal {
         miPelicula.evaluar(7.3);
         miPelicula.evaluar(9.5);
         miPelicula.evaluar(6.5);
+        miPelicula.evaluar(9.3);
+        miPelicula.evaluar(7.5);
+        miPelicula.evaluar(4.5);
 
         System.out.println("La suma de las evaluaciones es: " + String.format("%.2f" , miPelicula.getSumaEvaluaciones()));
         System.out.println("El promedio de notas evaluadas es: " + String.format("%.2f" , miPelicula.calcularPromedio()));
