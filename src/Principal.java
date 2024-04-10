@@ -8,7 +8,6 @@ public class Principal {
         miPelicula.setAnioLanzamiento(2021);
         miPelicula.setDuracionEnMinutos(120);
 
-
         miPelicula.mostrarFichaTecnica();
         miPelicula.evaluar(7.3);
         miPelicula.evaluar(0.5);
@@ -41,12 +40,15 @@ public class Principal {
 
         Serie serie1 = new Serie();
         serie1.setNombre("The Big Bang theory");
-        serie1.setTemporadas(12);
         serie1.setAnioLanzamiento(2011);
-        serie1.setDuracionEnMinutos(22);
         serie1.setIncluidoEnElPlan(true);
+        
+        serie1.setTemporadas(12);
         serie1.setEpisodiosPorTemporada(20);
+        serie1.setMinutosPorEpisodio(22);
 
+        System.out.println("............");
+        serie1.mostrarFichaTecnica();
 
     }
 }

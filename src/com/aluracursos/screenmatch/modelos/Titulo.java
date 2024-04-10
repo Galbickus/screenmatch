@@ -29,14 +29,6 @@ public class Titulo {
         return duracionEnMinutos;
     }
 
-    public void setSumaEvaluaciones(double sumaEvaluaciones) {
-        this.sumaEvaluaciones = sumaEvaluaciones;
-    }
-
-    public void setCantidadDeEvaluaciones(int cantidadDeEvaluaciones) {
-        this.cantidadDeEvaluaciones = cantidadDeEvaluaciones;
-    }
-
     public void setDuracionEnMinutos(int duracionEnMinutos) {
         this.duracionEnMinutos = duracionEnMinutos;
     }
@@ -53,15 +45,16 @@ public class Titulo {
         return sumaEvaluaciones;
     }
 
+    public void setSumaEvaluaciones(double sumaEvaluaciones) {
+        this.sumaEvaluaciones = sumaEvaluaciones;
+    }
+
     public int getCantidadDeEvaluaciones() {
         return cantidadDeEvaluaciones;
     }
 
-    public void mostrarFichaTecnica(){
-        System.out.println("\n-*-*-*-*-*-*\nFicha Técnica\n-*-*-*-*-*-*\n");
-        System.out.println("Título: " + this.nombre);
-        System.out.println("Año de lanzamiento es: " + this.anioLanzamiento);
-        System.out.println("Duración: " + this.duracionEnMinutos + " min.");
+    public void setCantidadDeEvaluaciones(int cantidadDeEvaluaciones) {
+        this.cantidadDeEvaluaciones = cantidadDeEvaluaciones;
     }
 
     public void evaluar(double nota){
@@ -72,4 +65,12 @@ public class Titulo {
         return sumaEvaluaciones / cantidadDeEvaluaciones;
 
     }
+
+    public void mostrarFichaTecnica(){
+        System.out.println("\n-*-*-*-*-*-*\nFicha Técnica\n-*-*-*-*-*-*\n");
+        System.out.println("Título: " + nombre);
+        System.out.println("Año de lanzamiento es: " + anioLanzamiento);
+        System.out.println("Duración: " + getDuracionEnMinutos() + " min.");
+    }
+
 }
