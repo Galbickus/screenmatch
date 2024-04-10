@@ -1,4 +1,5 @@
 import com.aluracursos.screenmatch.modelos.Pelicula;
+import com.aluracursos.screenmatch.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -37,5 +38,15 @@ public class Principal {
 //        System.out.println("La suma de las evaluaciones es: " + String.format("%.2f" , otraPelicula.getSumaEvaluaciones()));
 //        System.out.println("El promedio de notas evaluadas es: " + String.format("%.2f", otraPelicula.calcularPromedio()));
 //        System.out.println("Cantidad de evaluaciones contempladas: " + otraPelicula.getCantidadDeEvaluaciones());
+
+        Serie serie1 = new Serie();
+        serie1.setNombre("The Big Bang theory");
+        serie1.setTemporadas(12);
+        serie1.setAnioLanzamiento(2011);
+        serie1.setDuracionEnMinutos(22);
+        serie1.setIncluidoEnElPlan(true);
+        serie1.setEpisodiosPorTemporada(20);
+
+
     }
 }

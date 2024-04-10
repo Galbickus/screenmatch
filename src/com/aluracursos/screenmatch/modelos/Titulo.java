@@ -25,8 +25,16 @@ public class Titulo {
         this.anioLanzamiento = anioLanzamiento;
     }
 
-    public int getDuracionEnMinutos(int i) {
+    public int getDuracionEnMinutos() {
         return duracionEnMinutos;
+    }
+
+    public void setSumaEvaluaciones(double sumaEvaluaciones) {
+        this.sumaEvaluaciones = sumaEvaluaciones;
+    }
+
+    public void setCantidadDeEvaluaciones(int cantidadDeEvaluaciones) {
+        this.cantidadDeEvaluaciones = cantidadDeEvaluaciones;
     }
 
     public void setDuracionEnMinutos(int duracionEnMinutos) {
