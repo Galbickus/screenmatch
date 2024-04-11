@@ -1,5 +1,5 @@
 import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
-import com.aluracursos.screenmatch.modelos.Pelicula;
+import com.aluracursos.screenmatch.modelos.*;
 import com.aluracursos.screenmatch.modelos.Serie;
 
 public class Principal {
@@ -25,10 +25,10 @@ public class Principal {
         System.out.println("Cantidad de evaluaciones contempladas: " + miPelicula.getCantidadDeEvaluaciones());
 
 
-//        com.aluracursos.screenmatch.modelos.Pelicula otraPelicula = new com.aluracursos.screenmatch.modelos.Pelicula();
-//        otraPelicula.setNombre("Matrix");
-//        otraPelicula.setAnioLanzamiento(1999);
-//        otraPelicula.setDuracionEnMinutos(110);
+        Pelicula pelicula2 = new Pelicula();
+        pelicula2.setNombre("Matrix");
+        pelicula2.setAnioLanzamiento(1999);
+        pelicula2.setDuracionEnMinutos(110);
 
 //        otraPelicula.mostrarFichaTecnica();
 //        otraPelicula.evaluar(9.9);
@@ -54,6 +54,8 @@ public class Principal {
         CalculadoraDeTiempo calculadoraDeTiempo = new CalculadoraDeTiempo();
         calculadoraDeTiempo.incluir(miPelicula);
         calculadoraDeTiempo.incluir(serie1);
+        calculadoraDeTiempo.incluir(pelicula2);
+
 
         System.out.println("Tiempo total de la lista de reproducción: " + calculadoraDeTiempo.getTiempoTotal());
 
