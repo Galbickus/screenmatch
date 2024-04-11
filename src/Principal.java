@@ -1,3 +1,4 @@
+import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 
@@ -42,13 +43,19 @@ public class Principal {
         serie1.setNombre("The Big Bang theory");
         serie1.setAnioLanzamiento(2011);
         serie1.setIncluidoEnElPlan(true);
-        
+
         serie1.setTemporadas(12);
         serie1.setEpisodiosPorTemporada(20);
         serie1.setMinutosPorEpisodio(22);
 
         System.out.println("............");
         serie1.mostrarFichaTecnica();
+
+        CalculadoraDeTiempo calculadoraDeTiempo = new CalculadoraDeTiempo();
+        calculadoraDeTiempo.incluir(miPelicula);
+        calculadoraDeTiempo.incluir(serie1);
+
+        System.out.println("Tiempo total de la lista de reproducción: " + calculadoraDeTiempo.getTiempoTotal());
 
     }
 }
