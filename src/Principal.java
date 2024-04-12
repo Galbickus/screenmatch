@@ -1,4 +1,5 @@
 import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
+import com.aluracursos.screenmatch.calculos.FiltroRecomendacion;
 import com.aluracursos.screenmatch.modelos.*;
 import com.aluracursos.screenmatch.modelos.Serie;
 
@@ -58,6 +59,19 @@ public class Principal {
 
 
         System.out.println("Tiempo total de la lista de reproducción: " + calculadoraDeTiempo.getTiempoTotal());
+
+
+        FiltroRecomendacion filtroRecomendacion = new FiltroRecomendacion();
+        filtroRecomendacion.filtrar(miPelicula);
+
+        Episodio episodio8 = new Episodio();
+        episodio8.setNumeroEpisodio(8);
+        episodio8.setNombreDelEpisodio("El pony de Lisa");
+        episodio8.setSerie(serie1);
+        episodio8.setTotalDeVisualizaciones(1);
+
+        filtroRecomendacion.filtrar(episodio8);
+
 
     }
 }
