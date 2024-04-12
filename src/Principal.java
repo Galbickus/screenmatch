@@ -92,7 +92,7 @@ public class Principal {
         System.out.println("Tamaño de la lista: " + listaDePeliculas.size());
         System.out.println("La primera de la lista es: " + listaDePeliculas.get(0).getNombre());
         System.out.println("La segunda película de la lista es: " + listaDePeliculas.get(1).getNombre());
-        System.out.println("La lista completa es: " + listaDePeliculas);
+        System.out.println("La lista completa es: \n" + listaDePeliculas);
 
     }
 }

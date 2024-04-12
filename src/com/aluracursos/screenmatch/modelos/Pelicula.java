@@ -17,4 +17,9 @@ public class Pelicula extends Titulo implements Clasificacion {
     public int getClasificacion() {
         return (int) (calcularPromedio()/2);
     }
+
+    @Override
+    public String toString() {
+        return "Pelicula: " + this.getNombre() + " año de estreno (" + this.getAnioLanzamiento() + ").\n";
+    }
 }
