@@ -74,7 +74,7 @@ public class Principal {
 
         filtroRecomendacion.filtrar(episodio8);
 
-        /*Ahora JAVA permite usar VAR en las variables de
+        /*A partir de Java 10, se permite usar VAR en las variables de
          referencia, por más que diga VAR EN JAVA NO SE
           PUEDE CAMBIAR DE TIPO DE variable porque JAVA es
           fuertemente tipado */
@@ -90,7 +90,9 @@ public class Principal {
         listaDePeliculas.add(peliculaDeBruno);
 
         System.out.println("Tamaño de la lista: " + listaDePeliculas.size());
-        System.out.println("La primera de la lista es: " + listaDePeliculas.get(0));
+        System.out.println("La primera de la lista es: " + listaDePeliculas.get(0).getNombre());
+        System.out.println("La segunda película de la lista es: " + listaDePeliculas.get(1).getNombre());
+        System.out.println("La lista completa es: " + listaDePeliculas);
 
     }
 }
