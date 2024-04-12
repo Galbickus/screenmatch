@@ -73,4 +73,15 @@ public class Titulo {
         System.out.println("Duración: " + getDuracionEnMinutos() + " min.");
     }
 
+    @Override
+    public String toString() {
+        return "Titulo{" +
+                "nombre='" + nombre + '\'' +
+                ", anioLanzamiento=" + anioLanzamiento +
+                ", duracionEnMinutos=" + duracionEnMinutos +
+                ", incluidoEnElPlan=" + incluidoEnElPlan +
+                ", sumaEvaluaciones=" + sumaEvaluaciones +
+                ", cantidadDeEvaluaciones=" + cantidadDeEvaluaciones +
+                '}';
+    }
 }
