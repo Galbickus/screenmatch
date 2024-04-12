@@ -3,6 +3,8 @@ import com.aluracursos.screenmatch.calculos.FiltroRecomendacion;
 import com.aluracursos.screenmatch.modelos.*;
 import com.aluracursos.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
         Pelicula miPelicula = new Pelicula();
@@ -72,6 +74,23 @@ public class Principal {
 
         filtroRecomendacion.filtrar(episodio8);
 
+        /*Ahora JAVA permite usar VAR en las variables de
+         referencia, por más que diga VAR EN JAVA NO SE
+          PUEDE CAMBIAR DE TIPO DE variable porque JAVA es
+          fuertemente tipado */
+
+        var peliculaDeBruno = new Pelicula();
+        peliculaDeBruno.setNombre("El señor de los anillos");
+        peliculaDeBruno.setDuracionEnMinutos(180);
+        peliculaDeBruno.setAnioLanzamiento(2001);
+
+        ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
+        listaDePeliculas.add(miPelicula);
+        listaDePeliculas.add(pelicula2);
+        listaDePeliculas.add(peliculaDeBruno);
+
+        System.out.println("Tamaño de la lista: " + listaDePeliculas.size());
+        System.out.println("La primera de la lista es: " + listaDePeliculas.get(0));
 
     }
 }
