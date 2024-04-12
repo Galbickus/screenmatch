@@ -5,6 +5,10 @@ import com.aluracursos.screenmatch.calculos.Clasificacion;
 public class Pelicula extends Titulo implements Clasificacion {
     private String director;
 
+    /*constructor vacío explícito*/
+    public Pelicula() {
+    }
+
     public String getDirector() {
         return director;
     }
