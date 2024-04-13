@@ -8,9 +8,7 @@ import java.util.Objects;
 
 public class Principal {
     public static void main(String[] args) {
-        Pelicula miPelicula = new Pelicula();
-        miPelicula.setNombre("Encanto");
-        miPelicula.setAnioLanzamiento(2021);
+        Pelicula miPelicula = new Pelicula("Encanto", 2021);
         miPelicula.setDuracionEnMinutos(120);
 
         miPelicula.mostrarFichaTecnica();
@@ -29,9 +27,7 @@ public class Principal {
         System.out.println("Cantidad de evaluaciones contempladas: " + miPelicula.getCantidadDeEvaluaciones());
 
 
-        Pelicula pelicula2 = new Pelicula();
-        pelicula2.setNombre("Matrix");
-        pelicula2.setAnioLanzamiento(1999);
+        Pelicula pelicula2 = new Pelicula("Matrix", 1999);
         pelicula2.setDuracionEnMinutos(110);
 
 //        otraPelicula.mostrarFichaTecnica();
@@ -43,9 +39,7 @@ public class Principal {
 //        System.out.println("El promedio de notas evaluadas es: " + String.format("%.2f", otraPelicula.calcularPromedio()));
 //        System.out.println("Cantidad de evaluaciones contempladas: " + otraPelicula.getCantidadDeEvaluaciones());
 
-        Serie serie1 = new Serie();
-        serie1.setNombre("The Big Bang theory");
-        serie1.setAnioLanzamiento(2011);
+        Serie serie1 = new Serie("The BigBang Theory", 2011);
         serie1.setIncluidoEnElPlan(true);
 
         serie1.setTemporadas(12);
@@ -80,10 +74,9 @@ public class Principal {
           PUEDE CAMBIAR DE TIPO DE variable porque JAVA es
           fuertemente tipado */
 
-        var peliculaDeBruno = new Pelicula();
-        peliculaDeBruno.setNombre("El señor de los anillos");
+        var peliculaDeBruno = new Pelicula("El señor de los anillos", 2001);
         peliculaDeBruno.setDuracionEnMinutos(180);
-        peliculaDeBruno.setAnioLanzamiento(2001);
+
 
         ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
         listaDePeliculas.add(miPelicula);
