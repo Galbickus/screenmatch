@@ -40,9 +40,7 @@ public class Serie extends Titulo{
 
     @Override
     public String toString() {
-        return "Serie: "+ this.getNombre()+ ", año: "+this.getAnioLanzamiento()+
-                ", temporadas: " + temporadas +
-                ", episodiosPorTemporada: " + episodiosPorTemporada +
-                ", minutosPorEpisodio: " + minutosPorEpisodio;
+        return "Serie: " + this.getNombre() + " (" + this.getAnioLanzamiento() + ")";
+
     }
 }
