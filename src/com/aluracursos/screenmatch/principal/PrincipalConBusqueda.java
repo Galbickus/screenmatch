@@ -21,7 +21,7 @@ public class PrincipalConBusqueda {
     public static void main(String[] args) throws IOException, InterruptedException {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("http://foo.com/"))
+                .uri(URI.create("https://www.omdbapi.com/?t=the+matrix&y=1999&apikey=26dd704c"))
                 .build();
         /*HttpRequest req = new HttpRequest();
         * no se puede hacer un new de HttpRequest, porque es una clase abstrac-
