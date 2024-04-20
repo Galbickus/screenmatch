@@ -1,0 +1,18 @@
+[
+  {
+    "Nombre": "Matrix",
+    "AnioLanzamiento": 1993,
+    "DuracionEnMinutos": 60,
+    "IncluidoEnElPlan": false,
+    "SumaEvaluaciones": 0.0,
+    "CantidadDeEvaluaciones": 0
+  },
+  {
+    "Nombre": "Encanto",
+    "AnioLanzamiento": 2021,
+    "DuracionEnMinutos": 102,
+    "IncluidoEnElPlan": false,
+    "SumaEvaluaciones": 0.0,
+    "CantidadDeEvaluaciones": 0
+  }
+]
