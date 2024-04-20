@@ -33,6 +33,10 @@ public class PrincipalConBusqueda {
         Scanner lectura = new Scanner(System.in);
 
         List<Titulo> titulos = new ArrayList<>();
+        Gson gson = new GsonBuilder()
+                .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
+                .setPrettyPrinting()
+                .create();
 
         while (true){
             System.out.println("Escriba el nombre de una película");
@@ -61,18 +65,14 @@ public class PrincipalConBusqueda {
 
                 System.out.println(json);
 
-                Gson gson = new GsonBuilder()
-                        .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
-                        .create();
+
                 TituloOmdb miTituloOmdb = gson.fromJson(json, TituloOmdb.class);
                 System.out.println(miTituloOmdb);
 
                 Titulo miTitulo = new Titulo(miTituloOmdb);
                 System.out.println("Título ya convertido: " + miTitulo);
 
-                FileWriter escritura = new FileWriter("peliculas.txt");
-                escritura.write(miTitulo.toString());
-                escritura.close();
+                titulos.add(miTitulo);
 
             }catch(NumberFormatException e){
                 System.out.println("Ocurrió un error: ");
@@ -83,6 +83,11 @@ public class PrincipalConBusqueda {
                 System.out.println(e.getMessage());
             }
         }
+        System.out.println(titulos);
+
+        FileWriter escritura = new FileWriter("titulos.json");
+        escritura.write(gson.toJson(titulos));
+        escritura.close();
 
         System.out.println("Finalizó la ejecución del programa");
     }
